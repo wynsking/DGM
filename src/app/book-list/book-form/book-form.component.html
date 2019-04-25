@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <h2> Ajouter une demande</h2>
+    <form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" class="form-control" id="nom" formControlName="nom">
+      </div>
+      <div class="form-group">
+        <label for="prenom">Prenom</label>
+        <input type="author" class="form-control" id="prenom" formControlName="prenom">
+      </div>
+      <div class="form-group">
+        <label for="job">Profession</label>
+        <input type="text" class="form-control" id="job" formControlName="job">
+      </div>
+      <div class="form-group">
+        <label for="numPassport">Numero du Passeport</label>
+        <input type="author" class="form-control" id="numPassport" formControlName="numPassport">
+      </div>
+      <div class="form-group">
+        <label for="pays">Pays de residence</label>
+        <input type="text" class="form-control" id="pays" formControlName="paysResidence">
+      </div>
+      <button class="btn btn-success" [disabled]="bookForm.invalid">Enregistre</button>
+    </form>
+
+  </div>
+</div>
